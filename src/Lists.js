@@ -1,18 +1,5 @@
 import React from 'react'
-import { List, Datagrid, TextField, DateField, EmailField, ReferenceField } from 'react-admin'
-
-export const UserList = props => (
-  <List {...props}>
-    <Datagrid rowClick="edit">
-      <TextField source="id" />
-      <EmailField source="email" />
-      <TextField source="role" />
-      <TextField source="name" />
-      <TextField source="phone" />
-      <TextField source="group.name" />
-    </Datagrid>
-  </List>
-)
+import { List, Datagrid, TextField, DateField, ReferenceField } from 'react-admin'
 
 export const ProjectList = props => (
   <List {...props}>

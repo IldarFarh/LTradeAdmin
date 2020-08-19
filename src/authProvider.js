@@ -1,6 +1,6 @@
 const authProvider = {
   login: ({ username, password }) => {
-    const request = new Request('https://192.168.86.114:4000/graphql', {
+    const request = new Request('https://cabinet.leasing-trade.ru:4000/graphql', {
       method: 'POST',
       body: JSON.stringify({
         operationName: null,

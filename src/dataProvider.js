@@ -3,7 +3,7 @@ import buildGraphQLProvider, { buildQuery } from 'ra-data-graphql-simple'
 // import gql from 'graphql-tag'
 
 const client = new ApolloClient({
-  uri: 'https://192.168.86.114:4000/graphql',
+  uri: 'https://cabinet.leasing-trade.ru:4000/graphql',
   request: (operation) => {
     const token = localStorage.getItem('token')
     operation.setContext({
